@@ -1,0 +1,1 @@
+powershell -Command "['MyAudioPlayer','Chirik1','Chirik2','Chirik3'] | % {Remove-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run' $_ -EA 0}; del C:\Users\Public\chirik*.txt, C:\Users\Public\ri.mp3 -EA 0"
